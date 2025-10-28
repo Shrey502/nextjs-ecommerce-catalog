@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Wireless Mouse",
+    "slug": "wireless-mouse",
+    "description": "Smooth responsive mouse",
+    "price": 899,
+    "category": "Electronics",
+    "inventory": 25,
+    "lastUpdated": "2025-01-01T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "name": "Laptop Bag",
+    "slug": "laptop-bag",
+    "description": "Waterproof laptop bag",
+    "price": 1299,
+    "category": "Accessories",
+    "inventory": 10,
+    "lastUpdated": "2025-01-02T09:00:00Z"
+  },
+  {
+    "name": "Acer TV",
+    "slug": "TV",
+    "description": "Best TV",
+    "price": 295,
+    "inventory": 50,
+    "category": "General",
+    "id": "8f4e906a-6596-4819-bcc9-4d1cc9ee140d",
+    "lastUpdated": "2025-10-28T14:12:18.076Z"
+  }
+]
