@@ -45,22 +45,23 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           gap: '20px'
         }}>
           {filteredProducts.map((product: Product) => (
-            <Link key={product.id} href={`/products/${product.slug}`}>
-              <div
-                style={{
-                  border: '1px solid #ddd',
-                  padding: '16px',
-                  borderRadius: '8px',
-                  cursor: 'pointer'
-                }}
-              >
-                <h2>{product.name}</h2>
-                <p>{product.description}</p>
-                <strong>${product.price.toFixed(2)}</strong>
-                <p>Stock: {product.inventory}</p>
-              </div>
-            </Link>
-          ))}
+  <div
+    key={product.id}
+    style={{
+      border: '1px solid #ddd',
+      padding: '16px',
+      borderRadius: '8px',
+      cursor: 'pointer'
+    }}
+  >
+    <Link href={`/products/${product.slug}`}>
+      <h2>{product.name}</h2>
+      <p>{product.description}</p>
+      <strong>₹{product.price}</strong>
+      <p>Stock: {product.inventory}</p>
+    </Link>
+  </div>
+))}
         </div>
       </div>
     </>
