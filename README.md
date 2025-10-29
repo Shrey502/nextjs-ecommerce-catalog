@@ -66,3 +66,9 @@ A simple **Next.js-based Product Management Admin Panel** with CRUD functionalit
 ├── 📄 NextJs Assignment.pdf
 ├── 📄 package-lock.json
 └── 📄 package.json
+
+
+**Authuntication**
+
+If you’d like to review my authentication and authorization implementation, please visit "https://github.com/Shrey502/Auth-portfolio"
+The project also includes a two-step verification feature.
