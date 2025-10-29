@@ -47,4 +47,12 @@ const mainStyle: React.CSSProperties = {
   padding: '1rem',
 };
 
+<div style={{
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "flex-start",
+  gap: "40px",
+}}>
+
+</div>
 export default Layout;

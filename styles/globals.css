@@ -1,55 +1,148 @@
-/* Basic CSS Reset */
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 16px;
+/* Main container layout */
+.admin-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto;
+  gap: 50px;
 }
 
-* {
-  box-sizing: border-box;
+/* Left side form */
+.add-product-section {
+  width: 55%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* --- Product Detail Page Styles --- */
-
-.product-detail-container {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.product-detail-title {
-  font-size: 2.5rem;
-}
-
-.product-detail-description {
-  font-size: 1.2rem;
-  color: #444;
-}
-
-.product-detail-price {
-  font-size: 2rem;
+.add-product-section h2 {
+  font-size: 28px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.product-detail-meta {
-  color: #888;
-  font-size: 0.9rem;
+/* Form layout */
+.add-product-form input,
+.add-product-form textarea,
+.add-product-form button {
+  padding: 10px;
+  margin: 8px;
+  border: 2px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-/* Dynamic stock colors */
-.stock-low {
-  color: red;
+/* Save button */
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
-.stock-ok {
-  color: green;
+/* Right side — product list */
+.products-section {
+  width: 40%;
+}
+
+.product-item {
+  background: #f9f9f9;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Edit / Delete buttons */
+.product-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.product-actions button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffd966;
+}
+
+.delete-btn {
+  background-color: #ff6961
+}
+
+/* --- Admin Page Layout --- */
+.admin-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto;
+  gap: 50px;
+}
+
+.add-section {
+  flex: 1;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-section input,
+.add-section textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.add-section button {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.add-section button:hover {
+  background: #218838;
+}
+
+.product-list li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  list-style-type: none;
+}
+
+.product-list button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.product-list button:last-child {
+  background: #dc3545;
+}
+
+.product-list button:hover {
+  opacity: 0.8;
 }

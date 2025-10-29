@@ -8,10 +8,11 @@ export interface Product {
   slug: string;
   description: string;
   price: number;
-  category: string;
+  category?: string;
   inventory: number;
   lastUpdated: string;
 }
+
 
 // Get the full path to the products.json file
 const productsFilePath = path.join(process.cwd(), 'data/products.json');
